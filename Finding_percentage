@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    n = int(input())
+    s = {}
+    for i in range(n):
+        name, *line = input().split()
+        marks = list(map(float, line))
+        s[name] = marks
+    q = input()
+output = list(s[q])    
+p = sum(output)/len(output);
+print("%.2f" % p);
